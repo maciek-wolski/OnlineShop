@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using ShopAPI.Carts.Dtos;
-using ShopAPI.Carts.Queries;
 using ShopAPI.Controllers.Common;
+using ShopAPI.Funcionality.Carts.Dtos;
+using ShopAPI.Funcionality.Carts.Queries;
 
 namespace ShopAPI.Controllers;
 

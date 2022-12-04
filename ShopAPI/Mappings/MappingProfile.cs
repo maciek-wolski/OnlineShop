@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
-using ShopAPI.Carts.Dtos;
-using ShopAPI.Carts.Queries;
+using ShopAPI.Funcionality.Carts.Dtos;
+using ShopAPI.Funcionality.Carts.Queries;
 using ShopAPI.Models.Entity;
 
 namespace ShopAPI.Mappings;

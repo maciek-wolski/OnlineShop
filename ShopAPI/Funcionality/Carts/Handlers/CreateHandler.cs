@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using MediatR;
-using ShopAPI.Carts.Commands;
-using ShopAPI.Carts.Dtos;
+using ShopAPI.Funcionality.Carts.Commands;
+using ShopAPI.Funcionality.Carts.Dtos;
 using ShopAPI.Models.Data;
 using ShopAPI.Models.Entity;
 
-namespace ShopAPI.Carts.Handlers;
+namespace ShopAPI.Funcionality.Carts.Handlers;
 
 public class CreateHandler : IRequestHandler<CreateCommand, CreateUpdateCartResponseDto>
 {

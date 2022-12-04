@@ -1,7 +1,7 @@
 ﻿using MediatR;
-using ShopAPI.Carts.Dtos;
+using ShopAPI.Funcionality.Carts.Dtos;
 
-namespace ShopAPI.Carts.Commands;
+namespace ShopAPI.Funcionality.Carts.Commands;
 
 public class CreateCommand : IRequest<CreateUpdateCartResponseDto>
 {

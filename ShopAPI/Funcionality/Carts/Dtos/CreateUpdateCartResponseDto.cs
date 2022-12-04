@@ -1,4 +1,4 @@
-﻿namespace ShopAPI.Carts.Dtos;
+﻿namespace ShopAPI.Funcionality.Carts.Dtos;
 
 public class CreateUpdateCartResponseDto
 {
