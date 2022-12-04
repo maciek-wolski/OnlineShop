@@ -3,21 +3,15 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using ShopAPI.Funcionality.Carts.Dtos;
 using ShopAPI.Funcionality.Carts.Queries;
+using ShopAPI.Funcionality.Common;
 using ShopAPI.Models.Data;
 using ShopAPI.Models.Entity;
 
 namespace ShopAPI.Funcionality.Carts.Handlers;
 
-public class GetHandler : IRequestHandler<GetByIdQuery, GetCartResponseDto>
+public class GetHandler : BaseHandler, IRequestHandler<GetByIdQuery, GetCartResponseDto>
 {
-    private readonly ApplicationDbContext _dbContext;
-    private readonly IMapper _mapper;
-
-    public GetHandler(ApplicationDbContext dbContext, IMapper mapper)
-    {
-        _dbContext = dbContext;
-        _mapper = mapper;
-    }
+    public GetHandler(ApplicationDbContext dbContext, IMapper mapper) : base(dbContext, mapper) { }
 
     public async Task<GetCartResponseDto> Handle(GetByIdQuery request, CancellationToken cancellationToken)
     {
