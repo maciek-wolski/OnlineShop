@@ -6,6 +6,7 @@ namespace ShopAPI.Models.Entity;
 
 public class Product : GuidBaseEntity
 {
+    public string Name { get; set; }
     public decimal Price { get; set; }
     [MaxLength(200)]
     public string? Description { get; set; }
